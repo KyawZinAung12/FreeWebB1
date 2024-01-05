@@ -10,10 +10,12 @@ h1{
     word-spacing: 30px;
 }
 /* universal selector */
-/* *{
-    color: green;
-    text-transform: uppercase;
-} */
+*{
+    /* color: green;
+    text-transform: uppercase; */
+    margin: 0px;
+    padding: 0px;
+}
 
 /* tag selector /element selector */
 h2{
@@ -82,4 +84,70 @@ a:visited{
     color: red;
     border: 1px solid black;
     letter-spacing: 10px;
+}
+
+/* border */
+
+.borderone{
+    border: 10px dashed red;
+}
+
+.bordertwo{
+    border-top: 20px solid yellow;
+    border-left: 20px solid red;
+}
+.borderthree{
+    /* border-style: solid;/ */
+    /* all four */
+    /* border-style: solid dotted; */
+    /* T&B / L&R */
+    /* border-style: dashed solid dotted; */
+    /* T / L&R / B */
+    border-style: dotted double solid dashed;
+    /* T / R / B / L */
+}
+.borderwidth{
+    border-width: 20px 5px 10px 30px;
+    border-style: dotted;
+    border-color: red yellow;
+}
+
+/* margin */
+.margin{
+    border: 3px solid red;
+    /* margin: 40px; */
+    margin-top: 100px;
+}
+/* padding */
+.padding{
+    border: 2px solid black;
+    /* padding: 40px 100px; */
+    padding-top: 100px;
+}
+
+/* layout */
+
+.inline{
+    border: 2px solid red;
+    width: 300px;
+    display: inline-block;
+}
+.block{
+    border: 2px solid black;
+    width: 300px;
+    display: inline-block;
+}
+
+/* float */
+.float_left img{
+    width: 40%;
+    float: left;
+}
+.clear{
+    clear: both;
+}
+
+.float_right img{
+    width: 40%;
+    float: right;
 }
